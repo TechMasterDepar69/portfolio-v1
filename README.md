@@ -26,7 +26,7 @@ A modern, responsive single-page portfolio website designed to showcase my proje
 
 ## 📸 Screenshot
 
-*(Drag and drop a screenshot of your portfolio Hero Section here)*
+![Screenshot_6-12-2025_03136_localhost](https://github.com/user-attachments/assets/90f7b98e-4a6a-4fe4-82c7-b724da38f417)
 
 ---
 
