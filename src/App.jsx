@@ -25,7 +25,7 @@ function App() {
           <span className="text-blue-400 font-medium mb-4 tracking-widest uppercase text-sm">Hi, my name is</span>
 
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Depar. <br />
+            Depar Min Htet. <br />
             <span className="bg-gradient-to-r from-gray-400 to-gray-600 bg-clip-text text-transparent">
               I build data tools.
             </span>
@@ -43,59 +43,111 @@ function App() {
       </section>
 
       {/* --- PROJECTS SECTION --- */}
-      {/* Reduced vertical padding (py-16) */}
       <section id="projects" className="py-16 px-6 max-w-5xl mx-auto animate-fade-in-delay">
         <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
           <span className="text-blue-400 mr-2">01.</span> Some Things I've Built
         </h2>
 
-        <div className="group bg-gray-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-blue-900/20 transition duration-300 border border-gray-700 hover:-translate-y-2">
-          <div className="md:flex">
-            {/* Left: Image Container */}
-            {/* FIX: Added h-64 md:h-auto md:max-h-96 to limit height */}
-            <div className="md:w-1/2 relative overflow-hidden h-64 md:h-auto md:max-h-96">
+        {/* --- PROJECT 1: STUDENT CRM (The Full Stack Flagship) --- */}
+        <div className="group bg-gray-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-blue-900/20 transition duration-300 border border-gray-700 hover:-translate-y-2 mb-12">
+          <div className="md:flex items-stretch">
+            <div className="md:w-1/2 relative h-64 md:h-auto">
               <div className="absolute inset-0 bg-blue-500/10 group-hover:bg-transparent transition duration-500 z-10"></div>
-
-              {/* FIX: Added 'object-top' to focus on the charts at the top of your screenshot */}
-              <img
-                src="/project1.jpeg"
-                alt="Career Tracker Dashboard"
-                className="w-full h-full object-cover object-top transform group-hover:scale-105 transition duration-700 ease-in-out"
-              />
+              <img src="/project1.jpeg" alt="Student CRM" className="absolute inset-0 w-full h-full object-cover object-top transform group-hover:scale-105 transition duration-700 ease-in-out" />
             </div>
-
-            {/* Right: Content */}
             <div className="p-8 md:w-1/2 flex flex-col justify-center relative z-20">
               <h3 className="text-blue-400 font-bold text-sm mb-2 tracking-wide">Featured Project</h3>
-              <h4 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition">Career Analytics Dashboard</h4>
-
+              <h4 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition">Student Tuition CRM</h4>
               <div className="bg-gray-900 p-4 rounded-lg text-gray-300 text-sm mb-6 leading-relaxed shadow-inner border border-gray-700">
-                A full-stack application to track job applications and visualize success rates.
-                Features a custom CRUD API, MongoDB database, and a real-time analytics dashboard with Chart.js.
+                <p>A secure SaaS platform for private educators to track enrollment and revenue.</p>
+                <ul className="list-disc list-inside mt-2 text-gray-400">
+                  <li><strong>Security:</strong> Full Authentication system (Login/Register) using JWT & Bcrypt.</li>
+                  <li><strong>Database:</strong> MongoDB schema design for complex student relationships.</li>
+                  <li><strong>Business Logic:</strong> Automated calculation of monthly income.</li>
+                </ul>
               </div>
-
               <ul className="flex flex-wrap gap-4 text-xs font-mono text-gray-400 mb-8">
-                <li className="bg-gray-900 px-2 py-1 rounded text-blue-300">MongoDB</li>
-                <li className="bg-gray-900 px-2 py-1 rounded text-blue-300">Express</li>
-                <li className="bg-gray-900 px-2 py-1 rounded text-blue-300">React</li>
-                <li className="bg-gray-900 px-2 py-1 rounded text-blue-300">Node.js</li>
-                <li className="bg-gray-900 px-2 py-1 rounded text-blue-300">Chart.js</li>
+                <li className="text-blue-300">MongoDB</li>
+                <li className="text-blue-300">Express</li>
+                <li className="text-blue-300">React</li>
+                <li className="text-blue-300">Node.js</li>
+                <li className="text-blue-300">JWT Auth</li>
               </ul>
-
               <div className="flex space-x-6">
-                <a href="https://github.com/TechMasterDepar69/career-tracker-v1" target="_blank" className="text-white hover:text-blue-400 transition flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                  <span>Code</span>
-                </a>
-                <a href="https://career-tracker-portfolio.onrender.com" target="_blank" className="text-white hover:text-blue-400 transition flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                  <span>Live Demo</span>
-                </a>
+                <a href="https://github.com/TechMasterDepar69/client-crm" target="_blank" className="text-white hover:text-blue-400 transition flex items-center gap-2"><span>📂 Code</span></a>
+                <a href="https://client-crm-demo.onrender.com" target="_blank" className="text-white hover:text-blue-400 transition flex items-center gap-2"><span>🚀 Demo</span></a>
               </div>
             </div>
           </div>
         </div>
+
+        {/* --- PROJECT 2: CRYPTO TRACKER (The API Integration) --- */}
+        <div className="group bg-gray-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-blue-900/20 transition duration-300 border border-gray-700 hover:-translate-y-2 mb-12">
+          <div className="md:flex items-stretch">
+            <div className="p-8 md:w-1/2 flex flex-col justify-center relative z-20 md:order-2"> {/* Content First on Mobile, Right on Desktop */}
+              <h3 className="text-blue-400 font-bold text-sm mb-2 tracking-wide">Live Data Integration</h3>
+              <h4 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition">Real-Time Crypto Analytics</h4>
+              <div className="bg-gray-900 p-4 rounded-lg text-gray-300 text-sm mb-6 leading-relaxed shadow-inner border border-gray-700">
+                <p>A high-performance financial dashboard tracking live market data.</p>
+                <ul className="list-disc list-inside mt-2 text-gray-400">
+                  <li><strong>API Integration:</strong> Fetches live pricing via Axios from CoinGecko.</li>
+                  <li><strong>Visualization:</strong> Dynamic 7-day trendlines using Chart.js.</li>
+                  <li><strong>UX:</strong> Dark mode interface with real-time green/red indicators.</li>
+                </ul>
+              </div>
+              <ul className="flex flex-wrap gap-4 text-xs font-mono text-gray-400 mb-8">
+                <li className="text-blue-300">React</li>
+                <li className="text-blue-300">Vite</li>
+                <li className="text-blue-300">Tailwind CSS</li>
+                <li className="text-blue-300">Chart.js</li>
+                <li className="text-blue-300">Rest API</li>
+              </ul>
+              <div className="flex space-x-6">
+                <a href="https://github.com/TechMasterDepar69/crypto-tracker" target="_blank" className="text-white hover:text-blue-400 transition flex items-center gap-2"><span>📂 Code</span></a>
+                <a href="https://crypto-tracker-a627.onrender.com" target="_blank" className="text-white hover:text-blue-400 transition flex items-center gap-2"><span>🚀 Demo</span></a>
+              </div>
+            </div>
+            <div className="md:w-1/2 relative h-64 md:h-auto md:order-1">
+              <div className="absolute inset-0 bg-blue-500/10 group-hover:bg-transparent transition duration-500 z-10"></div>
+              <img src="/project2.jpeg" alt="Crypto Tracker" className="absolute inset-0 w-full h-full object-cover object-top transform group-hover:scale-105 transition duration-700 ease-in-out" />
+            </div>
+          </div>
+        </div>
+
+        {/* --- PROJECT 3: PYTHON ANALYTICS (The Data Science) --- */}
+        <div className="group bg-gray-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-blue-900/20 transition duration-300 border border-gray-700 hover:-translate-y-2">
+          <div className="md:flex items-stretch">
+            <div className="md:w-1/2 relative h-64 md:h-auto">
+              <div className="absolute inset-0 bg-blue-500/10 group-hover:bg-transparent transition duration-500 z-10"></div>
+              <img src="/project3.jpeg" alt="Python Analytics" className="absolute inset-0 w-full h-full object-cover object-top transform group-hover:scale-105 transition duration-700 ease-in-out" />
+            </div>
+            <div className="p-8 md:w-1/2 flex flex-col justify-center relative z-20">
+              <h3 className="text-blue-400 font-bold text-sm mb-2 tracking-wide">Data Science</h3>
+              <h4 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition">Tuition Revenue Forecaster</h4>
+              <div className="bg-gray-900 p-4 rounded-lg text-gray-300 text-sm mb-6 leading-relaxed shadow-inner border border-gray-700">
+                <p>An interactive predictive analytics tool for business forecasting.</p>
+                <ul className="list-disc list-inside mt-2 text-gray-400">
+                  <li><strong>Python Logic:</strong> Built entirely in Python using Streamlit & Pandas.</li>
+                  <li><strong>Predictive Models:</strong> "What-If" sliders to simulate future revenue.</li>
+                  <li><strong>Data Processing:</strong> Aggregates raw CSV data into actionable KPIs.</li>
+                </ul>
+              </div>
+              <ul className="flex flex-wrap gap-4 text-xs font-mono text-gray-400 mb-8">
+                <li className="text-blue-300">Python 3</li>
+                <li className="text-blue-300">Streamlit</li>
+                <li className="text-blue-300">Pandas</li>
+                <li className="text-blue-300">Data Visualization</li>
+              </ul>
+              <div className="flex space-x-6">
+                <a href="https://github.com/TechMasterDepar69/tuition-analytics-python" target="_blank" className="text-white hover:text-blue-400 transition flex items-center gap-2"><span>📂 Code</span></a>
+                <a href="https://tuition-analytics.onrender.com" target="_blank" className="text-white hover:text-blue-400 transition flex items-center gap-2"><span>🚀 Demo</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
+
 
       {/* --- ABOUT SECTION --- */}
       <section id="about" className="py-16 px-6 max-w-3xl mx-auto text-center">
