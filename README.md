@@ -1,16 +1,64 @@
-# React + Vite
+# 👨‍💻 Personal Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive single-page portfolio website designed to showcase my projects as a Full Stack Developer and Data Analyst. Built with a focus on performance, clean UI, and dark mode aesthetics.
 
-Currently, two official plugins are available:
+**[View Live Site](https://depar-portfolio.onrender.com)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Modern UI/UX:** Built with **Tailwind CSS** featuring a "Dark Mode" aesthetic and glassmorphism effects.
+* **Smooth Animations:** Custom CSS keyframe animations for fade-ins and hover states (no heavy animation libraries).
+* **Responsive Design:** Fully optimized layout that adapts seamlessly from mobile phones to large desktop screens.
+* **Project Showcase:** Dynamic project cards featuring my Client CRM, Crypto Tracker, and Data Science work.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+* **Framework:** React.js (Vite)
+* **Styling:** Tailwind CSS 3.4
+* **Deployment:** Render (Static Site)
+* **Version Control:** Git & GitHub
+
+---
+
+## 📸 Screenshot
+
+*(Drag and drop a screenshot of your portfolio Hero Section here)*
+
+---
+
+## 🔧 How to Run Locally
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/TechMasterDepar69/portfolio-v1.git](https://github.com/TechMasterDepar69/portfolio-v1.git)
+    cd portfolio-v1
+    ```
+
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the Development Server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in Browser**
+    Visit `http://localhost:5173`
+
+---
+
+## 👨‍💻 Author
+
+**Depar Min Htet**
+* **GitHub:** [TechMasterDepar69](https://github.com/TechMasterDepar69)
+* **Email:** techmasterdepar69@gmail.com
+
+---
+
+*This project was built as part of a Full Stack Data Analysis portfolio.*
